@@ -73,6 +73,10 @@ odometer: 0.095 +/- 0.001
 
 
 A more elaborate permutation importance is giving upon doing one hot encoding and doing gridsearch CV using a pipeline. The R2 decreases to 38% with the inclusion of more data with the top five categories as 
+
+<img width="1076" alt="pipeline information" src="https://github.com/amsc1985/CarPricePrediction/assets/37163650/c546a27f-e85a-4848-9ebc-ebf2359c2a69">
+
+The top categories of permutation importance are 
 cat__condition_excellent: 0.150 +/- 0.040
 cat__condition_like new: 0.115 +/- 0.049
 cat__drive_4wd: 0.106 +/- 0.025
@@ -86,6 +90,8 @@ cat__manufacturer_lexus: 0.000 +/- 0.000
 When the above is repeated by ignorining the manufacturer information, then, the R2 increases to 40% 
 
 ![Bar Graph of Coefficient Strength with manufacturer information](https://github.com/amsc1985/CarPricePrediction/assets/37163650/a2ebdceb-bea4-4453-921b-00bf29e450b9)
+![Permutation Importances without manufacturer information](https://github.com/amsc1985/CarPricePrediction/assets/37163650/af1140ac-1ebd-4619-be75-f231d38211ba)
 
-Overall the best prediction of car price ranging between `$30,000 - $100,000 for cars made from 2000 year was ~60% with MSE of 0.22 log car price using LASSO and Sequential Feature Selection.
+
+Overall the best prediction of car price ranging between `$30,000 - $100,000 for cars made from 2000 year was ~60% with MSE of 0.22 log car price using Ridge regression model of alpha =10 and Sequential Feature Selection with polynomial degree 3.
 
