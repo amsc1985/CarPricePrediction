@@ -6,9 +6,13 @@ The frame comprises of car of 18 attributes as follows: 'id', 'region', 'price',
 
 
 ### 2.1 Exploratory Data Analysis
-A prelimnary volume and price of the car datasheet suggested that 10.51 % of the population of car has price <$100, an impractical situation so we dropped it from the data analysis. On the higher side, 0.14% of the used car had price >$100k. 
 
-![Number of Cars with Price   $100k by Manufacturer and Decade](https://github.com/amsc1985/CarPricePrediction/assets/37163650/2d643168-7984-4d77-a090-ffb7ff9d0a05)
+All the available used cars sorted by various car manufacturer are show in the figure below
+![Used Car Brand Availability](https://github.com/amsc1985/CarPricePrediction/assets/37163650/d13e96c2-07bd-429c-96d1-d67561bdcab0)
+
+A preliminary volume and price of the car datasheet suggested that 10.51 % of the population of car has price <$100, an impractical situation so we dropped it from the data analysis. On the higher side, 0.14% of the used car had price >$100k. 
+ 
+<img width="991" alt="Number of Cars with Price   $100k by Manufacturer and Decade" src="https://github.com/amsc1985/CarPricePrediction/assets/37163650/03879c3b-7439-472f-b874-5a1c7c723548">
 
 These 160 used cars with `$>100k` price comprise of vintage cars from 1950 decade to the more luxury brand s like Porsche, Aston Martin, etc. Tracability to model the is not evaluated. Furthermore, of the 102022 used cars are available for sale with  1028  cars were made from 1905 to 2000. Ignoring the collectors market so we are dropping all cars that are less than 2000 make. Subesquent pricing analysis suggests, two price segment in the used car market. One segment concentrated around `$25,000` and another around `$44,000`. 
 
